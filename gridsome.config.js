@@ -6,5 +6,15 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
+  pathPrefix: '/vikfand-portfolio',
+  outDir: 'public',
+  plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+      },
+    },
+  ],
+
 }
