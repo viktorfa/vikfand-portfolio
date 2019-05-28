@@ -8,6 +8,7 @@ module.exports = {
   siteName: 'Gridsome',
   pathPrefix: '/vikfand-portfolio',
   outDir: 'public',
+  siteUrl: 'https://viktorfa.gitlab.io/vikfand-portfolio',
   plugins: [
     {
       use: '@gridsome/plugin-sitemap',
