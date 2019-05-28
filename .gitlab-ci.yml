@@ -16,6 +16,8 @@ before_script:
   - npm install
 
 pages:
+  variables:
+    BUILD_PAGES: 1
   stage: deploy
   script:
     - npm run build

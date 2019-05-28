@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  pathPrefix: '/vikfand-portfolio',
+  pathPrefix: process.env.BUILD_PAGES ? '/vikfand-portfolio' : '',
   outDir: 'public',
   siteUrl: 'https://viktorfa.gitlab.io/vikfand-portfolio',
   plugins: [
