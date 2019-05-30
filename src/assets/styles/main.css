@@ -1,0 +1,21 @@
+:root {
+  --main-text-color: #e4d9d9;
+  --main-bg-color: #121212;
+  --main-link-color: yellow;
+  --sidebar-width: 260px;
+  --topbar-height: 60px;
+  --body-side-margin: 0.6rem;
+}
+
+a,
+a:visited,
+a:active,
+a:link,
+a:focus,
+a:hover {
+  color: var(--main-link-color);
+  text-decoration: none;
+  outline: 0;
+}
+
+@import url(./fonts.css);

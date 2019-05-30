@@ -1,17 +1,30 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
-      </nav>
-    </header>
-    <slot/>
+    <div class="nav-and-content">
+      <div class="menu-wrapper">
+        <Menu/>
+      </div>
+      <div class="content-wrapper">
+        <div class="container">
+          <slot/>
+        </div>
+      </div>
+    </div>
+    <Footer/>
   </div>
 </template>
+
+<script>
+import Footer from "@/components/Footer";
+import Menu from "@/components/Menu";
+export default {
+  components: {
+    Footer,
+    Menu
+  }
+};
+</script>
+
 
 <static-query>
 query {
@@ -23,17 +36,43 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: "Varela Round", sans-serif;
+  margin: 0 var(--body-side-margin);
   line-height: 1.5;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 .layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+.nav-and-content {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100vh;
+  align-content: flex-start;
+}
+.nav-and-content > * {
+  flex: 1 100%;
+}
+
+.content-wrapper {
+  margin-top: var(--topbar-height);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .content-wrapper {
+    margin-left: var(--sidebar-width);
+    margin-top: 0;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
 }
 
 .header {
