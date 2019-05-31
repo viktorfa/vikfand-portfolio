@@ -11,7 +11,7 @@ The app isn't that big or complicated at the moment, but the system is quite com
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
-| Status         | MVP finished. Needs better UX to ship.       |
+| Status         | MVP shipped. Needs better UX to launch.      |
 | Problems       | Needs promotion and a monetization strategy. |
 | Frontend stack | React, Redux, Semantic UI                    |
 | Backend stack  | Express, MongoDB                             |
