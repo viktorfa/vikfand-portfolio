@@ -5,12 +5,7 @@
       <div v-html="content"></div>
     </div>
     <div class="image-wrapper">
-      <g-image
-        v-for="image in [image, image2, image3].filter(x => !!x)"
-        :key="image"
-        class="project-image"
-        :src="image"
-      ></g-image>
+      <g-image v-for="image in images" :key="image.id" class="project-image" :src="image"></g-image>
     </div>
   </div>
 </template>
@@ -23,6 +18,13 @@ export default {
     image2: Object,
     image3: Object,
     content: String
+  },
+  computed: {
+    // Kinda hard to get a list of images from markdown, so we make
+    // a list from separate frontmatter keys.
+    images() {
+      return [this.image, this.image2, this.image3].filter(x => !!x);
+    }
   }
 };
 </script>
@@ -33,6 +35,11 @@ export default {
 }
 .project {
   display: block;
+}
+
+td {
+  color: #10a820;
+  vertical-align: top;
 }
 
 @media screen and (min-width: 768px) {

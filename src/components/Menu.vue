@@ -44,9 +44,16 @@ nav {
   background: var(--main-bg-color);
 }
 
+nav > div:nth-child(1) {
+  padding-left: calc(1 * var(--body-side-margin));
+}
+nav > div:nth-last-child(1) {
+  padding-right: calc(1 * var(--body-side-margin));
+}
+
 .menu-links {
   text-transform: uppercase;
-  font-family: monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .navbar-link.active {
@@ -55,7 +62,7 @@ nav {
 
 @media screen and (min-width: 768px) {
   nav {
-  background: transparent;
+    background: transparent;
     width: var(--sidebar-width);
     font-size: 2.5rem;
     padding: 0.5rem;
