@@ -1,7 +1,7 @@
 <template>
   <div class="project">
+    <h2 class="project-title">{{title}}</h2>
     <div>
-      <h2 class="project-title">{{title}}</h2>
       <div v-html="content"></div>
     </div>
     <div class="image-wrapper">
@@ -32,6 +32,9 @@ export default {
 <style>
 .project-title {
   border-bottom: 2px solid var(--main-text-color);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: calc(100% * 5 / 9);
 }
 .project {
   display: block;
@@ -46,6 +49,7 @@ td {
   .project {
     display: grid;
     grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1 1;
   }
 }
 .project-image {

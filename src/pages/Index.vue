@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Redirect to /projects</h1>
+    <h1>Redirect to /projects ... please wait</h1>
   </Layout>
 </template>
 

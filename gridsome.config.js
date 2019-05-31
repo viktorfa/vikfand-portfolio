@@ -5,10 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Viktor Andersen',
   pathPrefix: process.env.BUILD_PAGES ? '/vikfand-portfolio' : '',
   outDir: 'public',
-  siteUrl: 'https://viktorfa.gitlab.io/vikfand-portfolio',
+  siteUrl: 'https://vikfand.com',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',

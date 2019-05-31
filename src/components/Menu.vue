@@ -9,7 +9,7 @@
           <g-link to="/projects" class="navbar-link">Projects</g-link>
         </li>
         <li>
-          <g-link to="/about" class="navbar-link">About</g-link>
+          <g-link to="/contact" class="navbar-link">Contact</g-link>
         </li>
         <li>
           <g-link to="/bio" class="navbar-link">Bio</g-link>

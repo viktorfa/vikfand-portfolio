@@ -1,8 +1,12 @@
 <template>
   <footer>
     <hr>
+    <g-link to="/#top">To the top</g-link>
     <div>
-      <span>{{year}}</span>
+      <span>
+        {{year}} built with
+        <a href="https://gridsome.org">Gridsome</a>
+      </span>
     </div>
     <div>
       <span>Viktor Andersen</span>
