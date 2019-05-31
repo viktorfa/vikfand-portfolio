@@ -34,7 +34,6 @@ export default {
   border-bottom: 2px solid var(--main-text-color);
   grid-column-start: 1;
   grid-column-end: 3;
-  max-width: calc(100% * 5 / 9);
 }
 .project {
   display: block;
@@ -51,12 +50,18 @@ td {
     grid-template-columns: 5fr 4fr;
     grid-template-rows: 1 1;
   }
+  .project-title {
+    max-width: calc(100% * 5 / 9);
+  }
+  .project-image {
+    max-width: 360px;
+  }
 }
 .project-image {
   width: auto;
   height: auto;
   max-height: 280px;
-  max-width: 360px;
+  max-width: 100%;
 }
 .image-wrapper {
   display: flex;
