@@ -7,9 +7,9 @@ image: '../static/images/dataportabilitet.png'
 
 Main challange with this is app is finding a good way to handle crowdsourced material. I'm not really that happy with the result, and it may be that just using MediaWiki is better for this kind of stuff. I did, however, wish to make it easier to contribute than doing the entire MediaWiki thing. So I ended up using a form and handling contributions manually.
 
-|                |                                                           |
-| -------------- | --------------------------------------------------------- |
-| Status         | Shipped.                                                  |
-| Problems       | Needs promotion and better way of handling contrinutions. |
-| Frontend stack | Hyperapp, Parcel                                          |
-| Backend stack  | QuintaDB, Google Sheets                                   |
+|                |                                                                 |
+| -------------- | --------------------------------------------------------------- |
+| Status         | Shipped.                                                        |
+| Problems       | Needs promotion and maybe better way of handling contributions. |
+| Frontend stack | Hyperapp, Parcel                                                |
+| Backend stack  | QuintaDB, Google Sheets                                         |
