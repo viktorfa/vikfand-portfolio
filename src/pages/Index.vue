@@ -7,7 +7,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Viktor Andersen"
+    title: "Welcome"
   },
   created() {
     this.$router.replace("/projects");

@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Viktor Andersen',
+  siteDescription: 'Web developer portfolio.',
   pathPrefix: process.env.BUILD_PAGES ? '/vikfand-portfolio' : '',
   outDir: 'public',
   siteUrl: 'https://vikfand.com',
