@@ -3,6 +3,7 @@ title: 'Red Tours'
 image: '../static/images/red-tours.png'
 image2: '../static/images/red-tours-mobile.png'
 image3: '../static/images/red-tours-desktop.png'
+order: 116
 ---
 
 [Røde reiser](https://viktorfa.github.io/red-tours) is a travel agency specializing in travels to China with a focus on revolutionary history. What is known as red tourism has seen a global downturn since its heyday in the 1960-70s. VFA Solutions helped give the concept a modern image reflected in sleek design in combination with classic posters from past eras.

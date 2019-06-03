@@ -3,6 +3,7 @@ title: 'Votify'
 image: '../static/images/votify.png'
 image2: '../static/images/votify-search.png'
 image3: '../static/images/votify-share.png'
+order: 120
 ---
 
 [Votify](https://votify-client.web.app) is a **social jukebox** for Spotify. The idea is that a group of people can vote for songs and create a collaborative playlist on the fly. Several similar apps exist, but none are good enough in my opinion. I did a [write-up](https://blog.vikfand.com/posts/spotify-social-jukeboxes/) on the status of these apps on my blog.
