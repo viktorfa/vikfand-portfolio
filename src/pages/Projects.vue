@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <h1>Projects</h1>
     <Project
       v-for="{node} in $page.projects.edges"
       v-bind:key="node.id"
