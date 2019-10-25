@@ -5,45 +5,45 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Viktor Andersen',
-  siteDescription: 'Web developer portfolio.',
-  pathPrefix: process.env.BUILD_PAGES ? '/vikfand-portfolio' : '',
-  outDir: 'public',
-  siteUrl: 'https://vikfand.com',
+  siteName: "Viktor Andersen",
+  siteDescription: "Web developer portfolio.",
+  pathPrefix: process.env.BUILD_PAGES ? "/vikfand-portfolio" : "",
+  outputDir: "public",
+  siteUrl: "https://vikfand.com",
   transformers: {
     remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
       plugins: [
         // ...global plugins
-      ],
-    },
+      ]
+    }
   },
   plugins: [
     {
-      use: '@gridsome/plugin-google-analytics',
+      use: "@gridsome/plugin-google-analytics",
       options: {
-        id: 'UA-142863239-1',
-      },
+        id: "UA-142863239-1"
+      }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'projects/**/*.md',
-        typeName: 'Project',
+        path: "projects/**/*.md",
+        typeName: "Project",
         remark: {
           plugins: [
             // ...local plugins
-          ],
-        },
-      },
+          ]
+        }
+      }
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000,
-      },
-    },
-  ],
+        cacheTime: 600000
+      }
+    }
+  ]
 };

@@ -2,15 +2,15 @@
   <div class="layout">
     <div class="nav-and-content">
       <div class="menu-wrapper">
-        <Menu/>
+        <Menu />
       </div>
       <div class="content-wrapper">
         <div class="container">
-          <slot/>
+          <slot />
         </div>
       </div>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
