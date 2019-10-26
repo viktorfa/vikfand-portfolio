@@ -17,3 +17,21 @@ collections:
       - { label: "Image 3", name: "image3", widget: "image", required: false }
       - { label: "Order", name: "order", widget: "number", valueType: "int" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "config"
+    label: "Config"
+    label_singular: "Config"
+    extension: json
+    files:
+      - file: siteConfig.json
+        label: Config
+        name: config
+        fields:
+          - name: siteName
+            label: Site Name
+            widget: string
+          - name: siteDescription
+            label: Site Description
+            widget: string
+          - name: siteUrl
+            label: Site Url
+            widget: string

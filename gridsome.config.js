@@ -1,15 +1,15 @@
+const siteConfig = require("./siteConfig.json");
+
 // This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = {
-  siteName: "Viktor Andersen",
-  siteDescription: "Web developer portfolio.",
+const config = {
+  ...siteConfig,
   pathPrefix: process.env.BUILD_PAGES ? "/vikfand-portfolio" : "",
   outputDir: "public",
-  siteUrl: "https://vikfand.com",
   transformers: {
     remark: {
       externalLinksTarget: "_blank",
@@ -48,3 +48,5 @@ module.exports = {
     }
   ]
 };
+
+module.exports = config;
