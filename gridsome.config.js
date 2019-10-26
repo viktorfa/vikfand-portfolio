@@ -39,6 +39,7 @@ module.exports = {
         }
       }
     },
+    { use: "gridsome-plugin-netlify-cms" },
     {
       use: "@gridsome/plugin-sitemap",
       options: {
