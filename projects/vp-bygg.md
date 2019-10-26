@@ -1,6 +1,8 @@
 ---
 title: VP Bygg
 image: ../static/images/screenshot-from-2019-10-26-13-34-43.png
+image2: /static/images/screen-shot-2019-10-26-at-13.37.40.png
+image3: /static/images/screen-shot-2019-10-26-at-13.38.32.png
 order: 200
 ---
 [VP Bygg](https://vpbygg.no) is a homepage and ecommerce site for a building materials retailer. VP Bygg needed custom behavior in calculating sizes of orders, to make it user friendly for contractors to order materials. The site was therefore made in Gatsby JS with its own shopping cart and order logic. 
